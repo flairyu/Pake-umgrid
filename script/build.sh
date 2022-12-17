@@ -28,11 +28,11 @@ total=$(sed -n '$=' app.csv)
 export total=$((total-1))
 export index=1
 
-export old_name="weread"
-export old_title="WeRead"
-export old_zh_name="微信阅读"
-export old_url="https://weread.qq.com/"
-export package_prefix="com-tw93"
+export old_name="umgrid"
+export old_title="UmGrid"
+export old_zh_name="联信网格"
+export old_url="https://open.umnet.cn/pc/message"
+export package_prefix="com-intwork"
 
 
 

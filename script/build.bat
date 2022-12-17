@@ -26,10 +26,10 @@ for /f %%a in (' find /c /v "" ^<"app.csv" ') do set /A total=%%a
 :: ignore first header line
 set /A total=total-1
 
-set old_name=weread
-set old_title=WeRead
-set old_zh_name=微信阅读
-set old_url=https://weread.qq.com/
+set old_name=umgrid
+set old_title=UmGrid
+set old_zh_name=联信网格
+set old_url=https://open.umnet.cn/pc/message
 
 :: set init name,  we will recovery code to init when build finish.
 set init_name=%old_name%

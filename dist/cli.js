@@ -1843,11 +1843,11 @@ function checkRustInstalled() {
 var tauri$3 = {
 	windows: [
 		{
-			url: "https://weread.qq.com/",
+			url: "https://open.umnet.cn/pc/message",
 			transparent: true,
 			fullscreen: false,
-			width: 1200,
-			height: 728,
+			width: 1280,
+			height: 800,
 			resizable: true
 		}
 	],
@@ -1866,7 +1866,7 @@ var build = {
 };
 var CommonConf = {
 	"package": {
-	productName: "WeRead",
+	productName: "UmGrid",
 	version: "1.0.0"
 },
 	tauri: tauri$3,
@@ -1876,10 +1876,10 @@ var CommonConf = {
 var tauri$2 = {
 	bundle: {
 		icon: [
-			"png/weread_256.ico",
-			"png/weread_32.ico"
+			"png/icon_256.ico",
+			"png/icon_32.ico"
 		],
-		identifier: "com.tw93.weread",
+		identifier: "com.intwork.umgrid",
 		active: true,
 		category: "DeveloperTool",
 		copyright: "",
@@ -1887,7 +1887,8 @@ var tauri$2 = {
 		],
 		longDescription: "",
 		resources: [
-			"png/weread_32.ico"
+			"png/icon_256.ico",
+			"png/icon_32.ico"
 		],
 		shortDescription: "",
 		targets: [
@@ -1913,9 +1914,9 @@ var WinConf = {
 var tauri$1 = {
 	bundle: {
 		icon: [
-			"icons/weread.icns"
+			"icons/icon.icns"
 		],
-		identifier: "com.tw93.weread",
+		identifier: "com.intwork.umgrid",
 		active: true,
 		category: "DeveloperTool",
 		copyright: "",
@@ -1945,10 +1946,10 @@ var MacConf = {
 var tauri = {
 	bundle: {
 		icon: [
-			"png/weread_256.ico",
-			"png/weread_512.png"
+			"png/icon_256.ico",
+			"png/icon_512.png"
 		],
-		identifier: "com.tw93.weread",
+		identifier: "com.intwork.umgrid",
 		active: true,
 		category: "DeveloperTool",
 		copyright: "",
@@ -1961,10 +1962,12 @@ var tauri = {
 				"libssl-dev",
 				"libgtk-3-dev",
 				"libayatana-appindicator3-dev",
-				"librsvg2-dev"
+				"librsvg2-dev",
+				"gnome-video-effects",
+				"gnome-video-effects-extra"
 			],
 			files: {
-				"/usr/share/applications/com-tw93-weread.desktop": "assets/com-tw93-weread.desktop"
+				"/usr/share/applications/com-intwork-umgrid.desktop": "assets/com-intwork-umgrid.desktop"
 			}
 		},
 		externalBin: [
@@ -2167,7 +2170,7 @@ class BuilderFactory {
 }
 
 var name = "pake-cli";
-var version = "0.1.2";
+var version = "0.1.3";
 var description = "🤱🏻 很简单的用 Rust 打包网页生成很小的桌面 App 🤱🏻 A simple way to make any web page a desktop application using Rust.";
 var bin = {
 	pake: "./cli.js"
@@ -2180,6 +2183,14 @@ var author = {
 	name: "Tw93",
 	email: "tw93@qq.com"
 };
+var keywords = [
+	"pake",
+	"pake-cli",
+	"rust",
+	"tauri",
+	"no-electron",
+	"productivity"
+];
 var files = [
 	"dist",
 	"src-tauri",
@@ -2202,7 +2213,7 @@ var exports = "./dist/pake.js";
 var license = "MIT";
 var dependencies = {
 	"@tauri-apps/api": "^1.2.0",
-	"@tauri-apps/cli": "^1.2.1",
+	"@tauri-apps/cli": "^1.2.2",
 	axios: "^1.1.3",
 	chalk: "^5.1.2",
 	commander: "^9.4.1",
@@ -2241,6 +2252,7 @@ var packageJson = {
 	bin: bin,
 	repository: repository,
 	author: author,
+	keywords: keywords,
 	files: files,
 	scripts: scripts,
 	type: type,
