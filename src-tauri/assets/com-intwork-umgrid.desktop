@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Categories=Office
+Exec=com-intwork-umgrid
+Icon=com-intwork-umgrid
+Name=com-intwork-umgrid
+Name[zh_CN]=联信网格
+StartupNotify=true
+Terminal=false
+Type=Application

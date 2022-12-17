@@ -1,12 +1,12 @@
 {
   "package": {
-    "productName": "WeRead",
+    "productName": "UmGrid",
     "version": "1.0.0"
   },
   "tauri": {
     "windows": [
       {
-        "url": "https://weread.qq.com/",
+        "url": "https://open.umnet.cn/pc/message",
         "transparent": true,
         "fullscreen": false,
         "width": 1200,
